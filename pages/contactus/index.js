@@ -11,6 +11,7 @@ import {
 import Image from "next/image";
 import contactImage from "../../public/images/contactus.jpg";
 import styles from "./contactus.module.css";
+import PageHeading from "../../controls/PageHeading";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -26,7 +27,7 @@ export default function ContactForm() {
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   if (!isMatch) {
     return (
-      <Box sx={{ height: "100vh" }}>
+      <Box sx={{ height: "100vh" }} mt={6}>
         <Grid
           container
           ml={2}
@@ -38,15 +39,7 @@ export default function ContactForm() {
         >
           <Grid item xs={12} md={4}>
             <Box sx={{ p: 2, backgroundColor: "#f7f7f7" }}>
-              <Typography
-                variant="h4"
-                align="center"
-                mb={4}
-                sx={{ color: "#D7B65D" }}
-                className={styles.gradiantheader}
-              >
-                CONTACT US
-              </Typography>
+              <PageHeading title="CONTACT US" />
               <form onSubmit={handleSubmit}>
                 <Grid
                   container
@@ -148,15 +141,7 @@ export default function ContactForm() {
         >
           <Grid item xs={12} md={4}>
             <Box sx={{ p: 2, backgroundColor: "#f7f7f7" }}>
-              <Typography
-                variant="h4"
-                align="center"
-                mb={4}
-                sx={{ color: "#D7B65D" }}
-                className={styles.gradiantheader}
-              >
-                CONTACT US
-              </Typography>
+              <PageHeading title="CONTACT US" />
               <form onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6}>

@@ -37,13 +37,7 @@ export default function Navbar() {
                 sx={{ justifyContent: "center", alignItems: "center" }}
               >
                 <Grid item md={3}>
-                  <Image
-                    src={logo}
-                    alt="logo"
-                    width={280}
-                    height={80}
-                    alt="logo"
-                  ></Image>
+                  <Image src={logo} alt="logo" width={280} height={80}></Image>
                 </Grid>
                 <Grid item md={9}>
                   <Tabs

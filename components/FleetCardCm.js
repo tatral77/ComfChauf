@@ -19,13 +19,12 @@ import viano from "../public/gallery/mercedes-viano-2.png";
 import BusinessCenterSharpIcon from "@mui/icons-material/BusinessCenterSharp";
 import PersonSharpIcon from "@mui/icons-material/PersonSharp";
 import ButtonCtl from "../controls/ButtonCtl";
+import PageHeading from "../controls/PageHeading";
 //www.kerbeckcars.com/new-vehicle-2016-rolls-royce-ghost-series-ii-c-803/#details-6
 export default function FleetCardCm() {
   return (
     <Container maxWidth="lg">
-      <Box className={styles.heading}>
-        <Typography variant="Body1">OUR FLEET</Typography>
-      </Box>
+      <PageHeading title="OUR FLEET" />
       <Box sx={{ mb: 4 }}>
         <Typography variant="Body2" mb={2}>
           Our chauffeur driven fleets are drawn from the luxury ranges of the
@@ -48,15 +47,7 @@ export default function FleetCardCm() {
           borderRadius: "5px",
         }}
       >
-        <Grid
-          container
-          item
-          xs={12}
-          md={6}
-          sx={{ backgroundColor: "#f7f7f7" }}
-          justify="center"
-          alignItems="center"
-        >
+        <Grid container item xs={12} md={6}>
           <Box className={styles.imagecontainer}>
             <Image src={banner} className={styles.image} />
           </Box>

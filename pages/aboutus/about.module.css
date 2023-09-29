@@ -1,0 +1,24 @@
+.para1 {
+  font-size: 14pt;
+  text-align: justify;
+  top: 30px;
+}
+.para2 {
+  font-size: 18pt;
+  text-align: center;
+  top: 30px;
+  word-spacing: 0.1cap;
+}
+.imagecontainer {
+  position: relative !important;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
