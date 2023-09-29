@@ -3,6 +3,7 @@ import PageHeading from "../../controls/PageHeading";
 import Image from "next/Image";
 import styles from "./about.module.css";
 import banner from "../../public/gallery/comfort.jpg";
+import AboutUsCardCmp from "../../components/AboutUsCardCmp";
 export default function AboutUs() {
   return (
     <Container>

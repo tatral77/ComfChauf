@@ -5,15 +5,16 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import professional from "../public/gallery/professional.jpg";
+import Image from "next/Image";
 
-export default function ActionAreaCard() {
+export default function AboutUsCardCmp() {
   return (
     <Card sx={{ maxWidth: 400 }}>
       <CardActionArea>
-        <CardMedia
+        <Image
           component="img"
           height="140"
-          image={professional}
+          url={professional}
           alt="green iguana"
         />
         <CardContent>
