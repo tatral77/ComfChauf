@@ -1,7 +1,8 @@
 .imagecontainer {
   position: relative !important;
-
-  margin: "auto";
+  background-color: #f7f7f7;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
@@ -9,4 +10,17 @@
   width: 100% !important;
   position: relative !important;
   height: unset !important;
+}
+.cardheading {
+  background-color: #404040;
+  color: #d7b65d;
+  border-bottom-left-radius: 10px;
+  padding-left: 20px;
+}
+.heading {
+  font-size: 20pt;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
 }

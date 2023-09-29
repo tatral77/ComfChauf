@@ -23,19 +23,8 @@ import ButtonCtl from "../controls/ButtonCtl";
 export default function FleetCardCm() {
   return (
     <Container maxWidth="lg">
-      <Box
-        sx={{
-          //color: "#D7B65D",
-
-          paddingTop: "5px",
-          paddingBottom: "5px",
-
-          textAlign: "center",
-        }}
-      >
-        <Typography variant="Body1" sx={{ fontSize: 26, fontWeight: "bold" }}>
-          OUR FLEET
-        </Typography>
+      <Box className={styles.heading}>
+        <Typography variant="Body1">OUR FLEET</Typography>
       </Box>
       <Box sx={{ mb: 4 }}>
         <Typography variant="Body2" mb={2}>
@@ -68,9 +57,9 @@ export default function FleetCardCm() {
           justify="center"
           alignItems="center"
         >
-          <div className={styles.imagecontainer}>
+          <Box className={styles.imagecontainer}>
             <Image src={banner} className={styles.image} />
-          </div>
+          </Box>
         </Grid>
         <Grid
           className={styles.imagecontainer}
@@ -79,15 +68,7 @@ export default function FleetCardCm() {
           md={6}
           sx={{ backgroundColor: "#f7f7f7" }}
         >
-          <Typography
-            variant="h5"
-            pl={4}
-            sx={{
-              backgroundColor: "#404040",
-              color: "#D7B65D",
-              borderTopLeftRadius: "10px",
-            }}
-          >
+          <Typography variant="h5" className={styles.cardheading}>
             Mercedese Benz S Class
           </Typography>
 
@@ -140,15 +121,7 @@ export default function FleetCardCm() {
           md={6}
           sx={{ backgroundColor: "#f7f7f7" }}
         >
-          <Typography
-            variant="h5"
-            pl={4}
-            sx={{
-              backgroundColor: "#404040",
-              color: "#D7B65D",
-              borderTopLeftRadius: "10px",
-            }}
-          >
+          <Typography variant="h5" pl={4} className={styles.cardheading}>
             Mercedese Viano
           </Typography>
 
