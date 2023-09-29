@@ -23,41 +23,38 @@ export default function Navbar() {
   return (
     <AppBar sx={{ backgroundColor: "#404040" }} position="static">
       <Toolbar>
-        {
-          //if
-          isMatch ? (
-            <>
-              <DrawerControl />
-            </>
-          ) : (
-            <Container maxWidth="xl">
-              <TopBar />
-              <Grid
-                container
-                sx={{ justifyContent: "center", alignItems: "center" }}
-              >
-                <Grid item md={3}>
-                  <Image src={logo} alt="logo" width={280} height={80}></Image>
-                </Grid>
-                <Grid item md={9}>
-                  <Tabs
-                    value={value}
-                    onChange={(e, value) => setValue(value)}
-                    indicatorColor="primary"
-                    sx={{ marginLeft: "auto" }}
-                    textColor="#fff"
-                  >
-                    <Tab label="Home" to="/"></Tab>
-                    <Tab label="Services"></Tab>
-                    <Tab label="Our Fleet"></Tab>
-                    <Tab label="Contact Us"></Tab>
-                    <Tab label="About Us"></Tab>
-                  </Tabs>
-                </Grid>
+        {isMatch ? (
+          <>
+            <DrawerControl />
+          </>
+        ) : (
+          <Container maxWidth="xl">
+            <TopBar />
+            <Grid
+              container
+              sx={{ justifyContent: "center", alignItems: "center" }}
+            >
+              <Grid item md={3}>
+                <Image src={logo} alt="logo" width={280} height={80}></Image>
               </Grid>
-            </Container>
-          )
-        }
+              <Grid item md={9}>
+                <Tabs
+                  value={value}
+                  onChange={(e, value) => setValue(value)}
+                  indicatorColor="primary"
+                  sx={{ marginLeft: "auto" }}
+                  textColor="#fff"
+                >
+                  <Tab label="Home" to="/"></Tab>
+                  <Tab label="Services"></Tab>
+                  <Tab label="Our Fleet"></Tab>
+                  <Tab label="Contact Us"></Tab>
+                  <Tab label="About Us"></Tab>
+                </Tabs>
+              </Grid>
+            </Grid>
+          </Container>
+        )}
       </Toolbar>
     </AppBar>
   );
