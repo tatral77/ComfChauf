@@ -1,6 +1,10 @@
 .icon{
     color: #D7B65D;
   }
+  .css-6k8hsv-MuiButtonBase-root-MuiIconButton-root{
+    color: #D7B65D !important;
+  }
+  
   .headerGrid {
     display: flex;
     gap: 0.5rem;

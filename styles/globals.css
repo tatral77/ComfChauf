@@ -6,7 +6,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.css-6k8hsv-MuiButtonBase-root-MuiIconButton-root{
+  color: #D7B65D !important;
+}
+.css-146kyg2-MuiPaper-root-MuiDrawer-paper {
+  background-color: #404040;
+  color: #ffff;
+}
+.css-9mgopn-MuiDivider-root{
+  background-color: #D7B65D ;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

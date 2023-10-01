@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
+import Image from "next/Image";
+import Link from 'next/link';
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
@@ -27,7 +29,7 @@ import MenuItem from "@mui/material/MenuItem";
 import PersonIcon from "@mui/icons-material/Person";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import SearchIcon from "@mui/icons-material/Search";
-import logo from "../../../public/Gallery/comfort.png";
+import logo from "../../../public/Gallery/Comfort.png";
 import { AboutUsData, OurCarsData, HeaderData, OurCompanyData } from "./data";
 import DropDownMenu from "./Dropdown";
 import KeyboardArrowDownSharpIcon from "@mui/icons-material/KeyboardArrowDownSharp";
@@ -80,7 +82,8 @@ function DrawerAppBar(props) {
     <>
       <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
         <Typography variant="h6" sx={{ my: 2 }}>
-          <img src={logo} width={114} alt="Logo" />
+        <Image src={logo} width={114} alt="Logo" />
+       
         </Typography>
         <Divider />
         <List>
@@ -147,21 +150,35 @@ function DrawerAppBar(props) {
                   display: { xs: "none", sm: "block", md: "block" },
                 }}
               >
-                <img src={logo} width={214} alt="Logo" />
+                  <Image src={logo} width={214} alt="Logo" />
+                
               </Typography>
               <Box
+             
+             sx={{
+               display: { xs: "flex", md: "none", sm: "none" },
+               flexDirection: "row",
+               justifyContent: "center",
+               alignItems: "center",
+               paddingLeft:"90px",
+             }}
+           >
+              <Image src={logo} width={114} alt="Logo" sx={{textAlign:"center"}} />
+              </Box>
+              <Box
+             
                 sx={{
-                  display: "flex",
+                  display: { xs: "none", sm: "flex", md: "flex", gap: "3rem" },
                   flexDirection: "row",
                   justifyContent: "flex-end",
                   alignItems: "center",
                 }}
               >
-                {/* <Link to="/" style={{ textDecoration: "none", cursor: "pointer" }}> */}
+                <Link  href="/" style={{ textDecoration: "none", cursor: "pointer" }}>
                   <Typography sx={{ paddingRight: "25px", cursor: "pointer", color: "white" }}>
                     Home
                   </Typography>
-                {/* </Link> */}
+                </Link>
                 {HeaderData.map((headerdata, index) => {
                   return <DropDownMenu title={headerdata.name}  />;
                 })}

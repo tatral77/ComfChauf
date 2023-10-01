@@ -16,7 +16,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
-import logo from "../../../public/Gallery/car-footer.jpg";
+import logo from "../../../public/Gallery/car-sold.png";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 const useStyles = makeStyles((theme) => ({
 
