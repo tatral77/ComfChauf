@@ -1,0 +1,14 @@
+.icon{
+    color: #D7B65D;
+  }
+  .headerGrid {
+    display: flex;
+    gap: 0.5rem;
+    justify-content:flex-end;
+  }
+  .header {
+    width: 100%;
+    background-color: #404040;
+    font-size: 11px;
+    color: #ffff;
+  }
