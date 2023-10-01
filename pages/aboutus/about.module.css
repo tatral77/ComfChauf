@@ -17,8 +17,16 @@
 }
 
 .image {
-  object-fit: contain;
   width: 100% !important;
   position: relative !important;
-  height: unset !important;
+  height: 400px !important;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.wrapper {
+  border-color: #d7b65d;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
