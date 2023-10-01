@@ -4,7 +4,7 @@ import Image from "next/Image";
 import styles from "./ceomessage.module.css";
 import banner from "../../public/gallery/ceo.jpg";
 import AboutUsCardCmp from "../../components/AboutUsCardCmp";
-export default function AboutUs() {
+export default function CeoMessage() {
   return (
     <Container>
       <Box sx={{ height: "100vh" }} mt={6}>
