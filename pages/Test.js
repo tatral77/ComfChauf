@@ -4,7 +4,7 @@ import logo2 from "../public/Images/location.png";
 import { makeStyles } from "@mui/styles";
 import { Container, Typography, Grid, Card, IconButton } from "@mui/material";
 import { Box } from "@mui/system";
-import Tabs from "../components/Tabs";
+import Tabs from "../components/FleetTab/Tabs";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import Porsche from "../public/Images/Porsche.png";
 import BMW from "../public/Images/BMW.png";
