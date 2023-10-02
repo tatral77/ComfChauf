@@ -1,6 +1,6 @@
 const typography = {
     fontFamily: [
-        'BlinkMacSystemFont',
+        'Lato-Regular',
     ].join(","),
   
     fontSize: 13,

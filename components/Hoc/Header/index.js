@@ -11,6 +11,7 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -125,6 +126,8 @@ function DrawerAppBar(props) {
             <Box className={styles.header}>
               <Grid container sx={{ paddingY: "8px" }}>
                 <Grid item xs={12} md={12} lg={12} className={styles.headerGrid}>
+                <LocationOnIcon className={styles.icon} />
+                  <Typography>515 Battersea Park Rd, London SW11 8BN, United Kingdom</Typography> {" "} 
                   <LocalPhoneIcon className={styles.icon} />{" "}
                   <Typography>+44 20 3617 1118</Typography>
                   <MailOutlineIcon className={styles.icon} />
