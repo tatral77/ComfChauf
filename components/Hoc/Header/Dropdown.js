@@ -114,7 +114,7 @@ const CascadingHoverMenus = (props) => {
         anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
         transformOrigin={{ vertical: "top", horizontal: "left" }}
       >
-        {title == "About Us" &&
+        {title == "ABOUT US" &&
           AboutUsData.map((item) => {
             if (item?.item) {
               return (
@@ -137,7 +137,7 @@ const CascadingHoverMenus = (props) => {
               </Link>
             );
           })}
-        {title == "Our Cars" &&
+        {title == "OUR CARS" &&
           OurCarsData.map((item) => (
             <Link href={`${item.link}`}  key={item.name}>
              
@@ -145,7 +145,7 @@ const CascadingHoverMenus = (props) => {
          
             </Link>
           ))}
-        {title == "Our Company" &&
+        {title == "OUR COMPANY" &&
           OurCompanyData.map((item) => (
             <Link href={`${item.link}`}  key={item.name}>
         

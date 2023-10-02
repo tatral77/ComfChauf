@@ -1,6 +1,6 @@
 const typography = {
     fontFamily: [
-        'Taviraj',
+        'BlinkMacSystemFont',
     ].join(","),
   
     fontSize: 13,

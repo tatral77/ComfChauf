@@ -1,7 +1,7 @@
 export const HeaderData = [
-  { name: "About Us", value: "aboutus", link: "/aboutus" },
-  { name: "Our Company", value: "ourcompany", link: "/ourcompany" },
-  { name: "Our Cars", value: "ourcars", link: "/ourcars" },
+  { name: "ABOUT US", value: "aboutus", link: "/aboutus" },
+  { name: "OUR COMPANY", value: "ourcompany", link: "/ourcompany" },
+  { name: "OUR CARS", value: "ourcars", link: "/ourcars" },
 ];
 export const OurCarsData = [
   { name: "Mercedes S-Class", value: "mercedesclass", link: "/mercedesclass" },

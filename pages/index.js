@@ -8,13 +8,13 @@ import { Container } from "@mui/material";
 export default function Home() {
   return (
     <>
-      <main>
+      <div sx={{ padding: "90px 90px"}}>
         <HomeBanner />
         <FleetCardCm />
         <Container>
         <Tabs/>
         </Container>
-      </main>
+        </div>
     </>
   );
 }

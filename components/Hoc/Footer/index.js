@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import logo from "../../../public/Gallery/Comfort.png";
 import {Grid, Divider } from '@mui/material';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -16,7 +17,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
-import logo from "../../../public/Gallery/car-sold.png";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 const useStyles = makeStyles((theme) => ({
 
@@ -85,7 +85,16 @@ const Index = () => {
     <Box sx={{ width: '100%',  marginTop:'20px;',bgcolor: '#101010', color:'#ffff' }}>
         <Container sx={ {textAlign:'left'} }>
 <Grid container spacing={2}>
-    
+<Grid item xs={12} sm={12} md={4} lg={4}>
+<Typography className={classes.footerHeader}>ABOUT US</Typography>
+<Divider className={classes.divider}/>
+<br/>
+<Typography className={classes.footersubHeader}  >Comfort Chauffeurs has provided car services in London area since 2008. What started as a small company has grown into a premier Chauffeurs company.</Typography>
+<br/>
+<Image src={logo} width={214} alt="Logo" />
+</Grid>
+
+
   <Grid item xs={12} sm={12} md={3} lg={3}>
 
    <Typography className={classes.footerHeader}>Contact us</Typography>
@@ -113,127 +122,22 @@ const Index = () => {
   <Typography className={classes.footersubHeader} sx={{paddingY:"6px"}}> Gallery </Typography>
   <Typography className={classes.footersubHeader} sx={{paddingY:"6px"}}> Contact Us </Typography>
   </Grid>
-  
   <Grid item xs={12} sm={12} md={3} lg={3}>
 
-  <Typography className={classes.footerHeader}>Gallery</Typography>
-  <Divider className={classes.divider}/>
-  <br/>
-  <Box sx={{gap:"1rem"}}>
-  <Image
-          component="img"
-          width="100"
-          url={logo}
-          alt="green iguana"
-        />
-         <Image
-          component="img"
-          width="100"
-          url={logo}
-          alt="green iguana"
-        />
-         <Image
-          component="img"
-          width="100"
-          url={logo}
-          alt="green iguana"
-        />
-  <Image
-          component="img"
-          width="100"
-          url={logo}
-          alt="green iguana"
-        />
-  {/* <img src={logo} width={100} alt="Logo" />
-  <img src={logo} width={100} alt="Logo" />
-  <img src={logo} width={100} alt="Logo" />
-  <img src={logo} width={100} alt="Logo" /> */}
-  </Box>
-</Grid>
-<Grid item xs={12} sm={12} md={4} lg={4}>
-<Typography className={classes.footerHeader}>Latest Posts</Typography>
+<Typography className={classes.footerHeader}>Working Hours</Typography>
 <Divider className={classes.divider}/>
-  <br/>
-  <Card>
-  <Grid container>
-  <Grid item xs={3} sm={3} md={4} lg={4}>
- 
-  <CardMedia
-        component="img"
-        image={logo}
-        alt="Live from space album cover"
-      />
-  {/* <img src={logo} width={100} alt="Logo" /> */}
-    </Grid>
-    <Grid item xs={9} sm={9} md={8} lg={8} sx={{backgroundColor:"#252525", padding:"8px"}}>
-   
-    <Typography  sx={{ color:"#FFFFFF",
-    fontSize:"14px",
-    lineHeight:"17px",
-    fontWeight:"700",
-    fontFamily:"Montserrat",fontStyle:"normal"}}> New Comfort Chauffers </Typography>
-    <Grid container sx={{paddingTop:"6px"}}>
-    <Grid item xs={2} sm={2} md={1.5} lg={1.5}>
-    <AccessTimeIcon fontSize='small' sx={{color:"white"}}/>
-    </Grid>
-      <Grid item xs={6} sm={6} md={7.5} lg={7.5}><Typography sx={{ color:"#FFFFFF",
-    fontSize:"14px",
-    lineHeight:"17px",
-    fontWeight:"700",
-    fontFamily:"Montserrat",fontStyle:"normal"}}>December, 12 2023</Typography></Grid>
-      <Grid item xs={6} sm={6} md={3} lg={3}>
-        <Typography sx={{   color:"#D7B65D",
-    fontSize:"14px",
-    lineHeight:"17px",
-    fontWeight:"700",
-    fontFamily:"Montserrat",}}>Read</Typography>
-      </Grid>
-    </Grid>
-  
-    </Grid>
-  </Grid>
-</Card>
 <br/>
-<Card>
-  <Grid container>
-  <Grid item xs={3} sm={3} md={4} lg={4}>
- 
-  <CardMedia
-        component="img"
-        image={logo}
-        alt="Live from space album cover"
-      />
-  {/* <img src={logo} width={100} alt="Logo" /> */}
-    </Grid>
-    <Grid item xs={9} sm={9} md={8} lg={8} sx={{backgroundColor:"#252525", padding:"8px"}}>
-   
-    <Typography  sx={{ color:"#FFFFFF",
-    fontSize:"14px",
-    lineHeight:"17px",
-    fontWeight:"700",
-    fontFamily:"Montserrat",fontStyle:"normal"}}> New Comfort Chauffers </Typography>
-    <Grid container sx={{paddingTop:"6px"}}>
-    <Grid item xs={2} sm={2} md={1.5} lg={1.5}>
-    <AccessTimeIcon fontSize='small' sx={{color:"white"}}/>
-    </Grid>
-      <Grid item xs={6} sm={6} md={7.5} lg={7.5}><Typography sx={{ color:"#FFFFFF",
-    fontSize:"14px",
-    lineHeight:"17px",
-    fontWeight:"700",
-   }}>December, 12 2023</Typography></Grid>
-      <Grid item xs={6} sm={6} md={3} lg={3}>
-        <Typography sx={{   color:"#D7B65D",
-    fontSize:"14px",
-    lineHeight:"17px",
-    fontWeight:"700",
-    fontFamily:"Montserrat",}}>Read</Typography>
-      </Grid>
-    </Grid>
-  
-    </Grid>
-  </Grid>
-</Card>
+<Box sx={{gap:"0.5rem"}}>
+<Typography className={classes.footersubHeader}>
+MON-SUN: 7 Days a Week 
+<br/>
+(Advance Bookings)
+</Typography>
+
+</Box>
 </Grid>
+  
+
 </Grid>
 <Divider sx={{padding:"0.5px", color:"white", backgroundColor:"white",marginTop:"12px", marginBottom:"8px" }}/>
 

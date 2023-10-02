@@ -21,6 +21,9 @@ import Grid from "@mui/material/Grid";
 import { Container } from "@mui/system";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { makeStyles } from "@mui/styles";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -123,9 +126,13 @@ function DrawerAppBar(props) {
               <Grid container sx={{ paddingY: "8px" }}>
                 <Grid item xs={12} md={12} lg={12} className={styles.headerGrid}>
                   <LocalPhoneIcon className={styles.icon} />{" "}
-                  <Typography>(1)-212-333-4343</Typography>
-                  <MailOutlineIcon className={styles.icon} />{" "}
-                  <Typography>reserve@limokingtheme.com</Typography>
+                  <Typography>+44 20 3617 1118</Typography>
+                  <MailOutlineIcon className={styles.icon} />
+                  <Typography>info@comfortchauffers.com</Typography> {" "} 
+                  <Typography sx={{display: { xs: "none", sm: "none", md:"flex"}}}>|</Typography> {" "} 
+                  <FacebookIcon sx={{display: { xs: "none", sm: "none", md:"flex"}}} className={styles.icon} />{" "}
+                  <WhatsAppIcon sx={{display: { xs: "none", sm: "none", md:"flex"}}} className={styles.icon} />{" "}
+                  <InstagramIcon sx={{display: { xs: "none", sm: "none",md:"flex" }}} className={styles.icon} />{" "}
                 </Grid>
               </Grid>
             </Box>
@@ -172,15 +179,16 @@ function DrawerAppBar(props) {
                   flexDirection: "row",
                   justifyContent: "flex-end",
                   alignItems: "center",
+                 cursor:"pointer"
                 }}
               >
                 <Link  href="/" style={{ textDecoration: "none", cursor: "pointer" }}>
                   <Typography sx={{ paddingRight: "25px", cursor: "pointer", color: "white" }}>
-                    Home
+                    HOME
                   </Typography>
                 </Link>
                 {HeaderData.map((headerdata, index) => {
-                  return <DropDownMenu title={headerdata.name}  />;
+                  return <DropDownMenu title={headerdata.name}  sx={{cursor:"pointer"}}  />;
                 })}
               </Box>
               <Box
@@ -225,6 +233,7 @@ function DrawerAppBar(props) {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
+        sx={{cursor:"pointer"}}
       >
         {menuType == "About Us" &&
           AboutUsData.map((aboutusdata) => {

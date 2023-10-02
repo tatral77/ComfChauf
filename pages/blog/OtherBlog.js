@@ -1,5 +1,5 @@
 import React from 'react'
-import './Blog.css';
+// import './Blog.css';
 import { BlogData } from './BlogData';
 // import Slider from "react-slick";
 const OtherBlog = () => {

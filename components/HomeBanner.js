@@ -15,7 +15,7 @@ export default function HomeBanner() {
         container
         xs="none"
         spacing={2}
-        sx={{ height: "350px", mt: "10px", mb: "70px" }}
+        sx={{ height: "350px", mt: "10px", mb: "70px", paddingTop:"100px"}}
       >
         <Grid
           className={styles.imagecontainer}
